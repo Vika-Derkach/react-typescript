@@ -31,7 +31,11 @@ const toggleHandler = (id: number) => {
 
 
 const removeHandler = (id: number) => {
+ const shouldRemove = window.confirm('Are you sure that you want to delete the element? ')
+ if (shouldRemove) {
   setTodos((prev) => prev.filter(todo => todo.id !== id ))
+ }
+
 }
 
  return ( 
