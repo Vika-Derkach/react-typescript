@@ -24,7 +24,7 @@ export const TodoList: React.FC<TodoListProps> = ({todos, onToggle,  onRemove}) 
                       classes.push('completed')
                   }
                 return (
-                    <li className={classes.join(' ')} key={todo.id}>
+                 <li className={classes.join(' ')} key={todo.id}>
                     <label >
                     <input
                          type="checkbox"
